@@ -1,0 +1,1 @@
+# Escreva um programa que faça o computador "pensar" um número inteiro entre 0 e 5 e peça ao usuario tentar descobrir qual foi o número escolhido pelo computador. O programa deverá escrever na tela se o usuario venceu ou perdeu.  
