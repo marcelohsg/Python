@@ -11,4 +11,3 @@ while n != 0:
 print(f'Foram digitados {par} números pares.')
 print(f'Foram digitados {impar} números ímpares.')
 print('Acabou!')
-
