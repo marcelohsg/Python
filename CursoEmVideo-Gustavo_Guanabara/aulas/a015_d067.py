@@ -1,5 +1,4 @@
 # Faça um programa que mostre a tabuada de vários números, um de cada vez, para cada valor digitado pelo usuário. O programa será interrompido quando o número solicitado for negativo.
-cont = 0
 while True:
     n = int(input('Você quer a tabuada de qual número? '))
     print('=-'*20)
