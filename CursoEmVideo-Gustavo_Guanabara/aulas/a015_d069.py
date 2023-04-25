@@ -21,9 +21,8 @@ while True:
         contIdade += 1
     if sexo == 'M':
         contHomem += 1
-    if sexo == 'F':
-        if idade < 20:
-            contMulher += 1
+    if sexo == 'F' and idade < 20:
+        contMulher += 1
     if continuar == 'N':
         print('Fim programa!')
         print('=-'*15)
