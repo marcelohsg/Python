@@ -2,12 +2,12 @@
 aluno = {}
 aluno['nome'] = input('Nome: ')
 aluno['media'] = float(input(f'Média de {aluno["nome"]}: '))
-print('-='*30)
-print(f'- O nome é igual a {aluno["nome"]}')
-print(f'- Média é igual a {aluno["media"]}')
-if aluno['media'] < 7:
-    print('- Situação é igual a recuperação!')
-elif aluno['media'] < 4:
-    print('- Situação é igual a reprovado!')
+if aluno['media'] >= 7:
+    aluno['situação'] = 'aprovado'
+elif aluno['media'] >= 5:
+    aluno['situação'] = 'recuperação'
 else:
-    print('- Situação é igual a aprovado!')
+    aluno['situação'] = 'reprovado'
+print('-='*30)
+for k, v in aluno.items():
+    print(f'- {k} é igual a {v}') 
