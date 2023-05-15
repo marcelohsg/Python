@@ -20,4 +20,26 @@ while True:
             print('Opção inválida. Escolha "S" para SIM ou "N" para NÃO!')
     if option == 'N':
         break
-print(lista)
+print('-='*30)
+print(f'{"cod":<4} {"nome":<20} {"gols":<20} total')
+print('-'*55)
+for k, v in enumerate(lista):
+    print(f'{k:<4} {v["nome"]:<20} {v["Total de gols"]:<20} {v["jogos"]}')
+resp = ''
+while True:
+    print('-'*55)
+    while True:
+        resp = int(input('Mostrar dados de qual jogador? (999 para parar) '))
+        if resp < len(lista) or resp == 999:
+            break
+        else:
+            print('Jogador NÃO encontrado. Tente novamente!')
+    if resp == 999:
+        print('-'*55)
+        print('PROGRAMA FINALIZADO!')
+        print('  <<<< VOLTE SEMPRE >>>>')
+        break    
+    print(f'  -- LEVANTAMENTO DO JOGADOR {lista[resp]["nome"]}')
+    print(f'     Realizou {lista[resp]["Total de gols"]} gols em {lista[resp]["jogos"]} jogos')
+    print(f'     Média de {lista[resp]["Total de gols"]/lista[resp]["jogos"]:.2f} gols por jogo')
+    
