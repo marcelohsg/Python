@@ -16,10 +16,6 @@ def metade(valor=0):
     return valor/2
 
 
-def moeda(valor=0, moeda='R$'):
-    return f'{moeda}{valor:.2f}'.replace('.', ',')
-
-
 def resumo(valor=0, taxaa=10, taxar=5):
     print('-'*30)
     print('RESUMO DO VALOR'.center(30))
