@@ -14,3 +14,4 @@ def aumentar(num, taxa):
 def diminuir(num, taxa):
     res = num - (num * taxa/100)
     return res
+
